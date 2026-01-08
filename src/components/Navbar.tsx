@@ -26,15 +26,15 @@ export default function Navbar() {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? "bg-white/95 backdrop-blur-md shadow-lg py-3"
-                    : "bg-transparent py-5"
+                ? "bg-white/95 backdrop-blur-md shadow-lg py-3"
+                : "bg-transparent py-5"
                 }`}
         >
             <div className="container-custom flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
                     <div
-                        className={`w-10 h-10 rounded-full flex items-center justify-center ${isScrolled ? "bg-primary" : "bg-white"
+                        className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${isScrolled ? "bg-primary" : "bg-white"
                             }`}
                     >
                         <span
